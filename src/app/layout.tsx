@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <footer className="footer">
-          Free coins only. No real-money play. <span aria-hidden>·</span> <b>Demo by DC Tech</b>
+          Free coins only. No real-money play. <span aria-hidden>·</span> <b>Demo by <a href="https://dctechltd.com" target="_blank" rel="noopener" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>DC Tech</a></b>
         </footer>
       </body>
     </html>

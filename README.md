@@ -176,4 +176,4 @@ BASE_URL=https://dice-live-demo.vercel.app npm run test:e2e   # against the live
 
 ---
 
-Free coins only. No real-money play. Fictional brand. **Demo by DC Tech.**
+Free coins only. No real-money play. Fictional brand. **Demo by [DC Tech](https://dctechltd.com).**
