@@ -8,4 +8,17 @@
 | 3. App UI + LiveKit video + local smoke test | 2026-11-03 00:55:58 WAT | 2026-11-03 01:22:49 WAT | UI + LiveKit wired; local prod build e2e: 6/6 (desktop + 390px) after fixing 3 real bugs (stuck dice tumble, footer over sheets, toolbar overflow at 390px) |
 | 4. Vercel deploy + env vars | 2026-11-03 01:22:50 WAT | 2026-11-03 01:27:00 WAT | live at https://dice-live-demo.vercel.app; 5 env vars (prod+dev), service-role key intentionally not deployed; bundle scan: no server secrets |
 | 5. E2E against live URL (390px + desktop) | 2026-11-03 01:27:00 WAT | 2026-11-03 01:41:06 WAT | 6/6 e2e green on live URL (390px + desktop), 0 console errors, CLS<0.05; 72/72 unit+DB green; lint+tsc clean |
-| 6. Secret scan (gitleaks) + public GitHub repo | 2026-11-03 01:41:06 WAT | _running_ | |
+| 6. Secret scan (gitleaks) + public GitHub repo | 2026-11-03 01:41:06 WAT | 2026-11-03 01:42:06 WAT | gitleaks: staged + history + tracked-file export = no leaks; env-value cross-check clean; public repo pushed |
+
+## Durations
+
+| Phase | Duration |
+|---|---|
+| 0. Setup & credentials | 23m 41s |
+| 1. Game engine: rules module + Postgres functions + tests | 24m 48s |
+| 2. Remote Supabase: migration + auth config | 1m 10s |
+| 3. App UI + LiveKit video + local smoke test | 26m 51s |
+| 4. Vercel deploy + env vars | 4m 10s |
+| 5. E2E against live URL (390px + desktop) | 14m 06s |
+| 6. Secret scan (gitleaks) + public GitHub repo | 1m 00s |
+| **Total (first start → last end, includes waiting on credentials)** | **1h 35m** |
