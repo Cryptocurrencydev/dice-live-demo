@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton", display: "swap" });
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="footer">
           Free coins only. No real-money play. <span aria-hidden>·</span> <b>Demo by <a href="https://dctechltd.com" target="_blank" rel="noopener" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}>DC Tech</a></b>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
