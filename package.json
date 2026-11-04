@@ -16,6 +16,7 @@
   "dependencies": {
     "@livekit/components-react": "^2.9.24",
     "@supabase/supabase-js": "^2.118.0",
+    "@vercel/analytics": "^2.0.1",
     "livekit-client": "^2.23.0",
     "livekit-server-sdk": "^2.19.2",
     "next": "^16.4.4",
